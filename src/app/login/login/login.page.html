@@ -11,25 +11,22 @@
     </ion-card-header>
 
     <ion-card-content>
-      <ion-list>
-        <ion-item>
-         <ion-label position="stacked" class="usuario">Usario</ion-label>
-      <ion-input [clearInput]="true" placeholder="coloque seu usuario" type="usuario" ></ion-input>
-        </ion-item>
 
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input [clearInput]="true" placeholder="coloque seu Email" type="usuario" ></ion-input>
+      </ion-item>
         <ion-item>
-          <ion-label position="stacked" class="senha">senha</ion-label>
+          <ion-label position="floating">senha</ion-label>
           <ion-input [clearInput]="true" placeholder="coloque sua senha" type="password"></ion-input>
         </ion-item>
 
-<ion-button fill="clear" type="button1">esqueci minha senha</ion-button><br>
-<ion-button color="" type="button2">entrar</ion-button>
-<ion-button fill="clear" type="button3">botão 3</ion-button>
-<ion-button fill="clear" type="button4">botão 3</ion-button>
+<ion-button type="button1">esqueci minha senha</ion-button>
+<ion-button color="" type="button2" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">entrar</ion-button>
+<ion-button type="button3" [routerLink]="['/cadastro']" routerLinkActive="router-link-active" >registrar</ion-button>
+<ion-button type="button4" [routerLink]="['/tabs/tab1']" routerLinkActive="router-link-active" >voltar</ion-button>
 
 
-      </ion-list>
+
+
     </ion-card-content>
-  </ion-card>
-
-</ion-content>
