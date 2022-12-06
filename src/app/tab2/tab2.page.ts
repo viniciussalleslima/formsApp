@@ -21,7 +21,8 @@ export class Tab2Page {
     this.buscarUsuarios();
   }
 
-  excluirCadastro(email: string){
+  async excluirCadastro(email: string){
     this.storageService.remove(email);
+    this.buscarUsuarios();
   }
 }
